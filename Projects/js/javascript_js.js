@@ -521,3 +521,104 @@ function area(width, height) {
 function whoAreYou(man, woman) {
 	return man == "yes" || woman == "no" ? document.getElementById('p1').innerHTML = "you are great" : man == "no" || woman == "yes" ? document.getElementById('p1').innerHTML = "you are pice of shit" : document.getElementById('p1').innerHTML = "you should select it or write it right you idiot"
 }*/
+
+
+// lesson 27
+
+/*document.getElementById('submitBtn').onclick = function () {
+	let userName = document.getElementById('myName').value;
+	document.getElementById('p1').innerHTML = `Hello ${userName} we see that you did not pay taxes, so we dicided to delete you account and steal your money - 1000$ --> 0$:). Have a great day`
+}*/
+
+
+// lesson 28
+
+/*document.getElementById('submitBtn').onclick = function () {
+	let userName = document.getElementById('myName').value;
+	// let money = 2352352
+	let money = 124524567
+	// money = money.toLocaleString('ru-RU');
+	// money = money.toLocaleString('de-DE');
+	// money = money.toLocaleString('en-US');
+	// money = money.toLocaleString("en-US", { style: "currency", currency: 'USD' })
+	// money = money.toLocaleString("ru-RU", { style: "currency", currency: 'RUB' })
+	// money = money.toLocaleString(undefined, { style: "percent" })
+	// money = money.toLocaleString(undefined, { style: "unit", unit: "celsius" })
+	// document.getElementById('p1').innerHTML = `Hello ${userName} and you know what? your mom as hot as ${money}`
+	// document.getElementById('p1').innerHTML = `Hello ${userName} we see that you did not pay taxes, so we dicided to delete you account and steal your money ${money}- 0$:). Have a great day`
+}*/
+
+
+// lesson 29
+
+/*const random = Math.floor((Math.random() * 100) + 1);
+let numbers = 0;
+
+document.getElementById('submitNumber').onclick = function () {
+	let number = document.getElementById('numberDie').value;
+	numbers += 1;
+
+	// if (number == random) {
+	// 	document.getElementById('p1').innerHTML = `${random} is right answer and you won with ${numbers} guesses!`
+	// }
+	// else if (number < random) {
+	// 	document.getElementById('p1').innerHTML = ` it's too small`
+	// }
+	// else {
+	// 	document.getElementById('p1').innerHTML = ` it's too big`
+	// }
+
+	switch (true) {
+		case number == random:
+			document.getElementById('p1').innerHTML = `${number} is right answer and you won BTW it took only ${numbers} guesses!`
+			break
+		case number > random:
+			document.getElementById('p1').innerHTML = `It's too big`
+			break
+		default: document.getElementById('p1').innerHTML = `It's too small`
+	}
+}*/
+
+
+// lesson 30
+
+
+/*document.getElementById('submit').onclick = function () {
+	let temp;
+
+	switch (true) {
+		case document.getElementById('fahrenheit').checked:
+			temp = document.getElementById('number').value;
+			temp = Number(temp)
+			temp = toCelciuse(temp)
+			temp = temp.toLocaleString(undefined, { style: 'unit', unit: 'fahrenheit' });
+			document.getElementById('p1').innerHTML = temp
+			break;
+		case document.getElementById('celciuse').checked:
+			temp = document.getElementById('number').value;
+			temp = Number(temp);
+			temp = toFahrenheit(temp);
+			temp = temp.toLocaleString(undefined, { style: 'unit', unit: 'celsius' });
+			document.getElementById('p1').innerHTML = temp;
+			break;
+		default: document.getElementById('p1').innerHTML = "select your temp"
+	}
+
+}
+function toCelciuse(temp) {
+	return (temp - 32) * (5 / 9);
+}
+function toFahrenheit(temp) {
+	return temp * 9 / 5 + 32;
+}*/
+
+
+// lesson 31
+
+document.getElementById('submit').onclick = function () {
+	let number = document.getElementById('number').value;
+	items = ["orange", ' banana', ' apple', ' peach', ' cucumber']
+	number = items[number]
+	let number1 = document.getElementById('number1').checked;
+	document.getElementById('p1').innerHTML = number
+}
