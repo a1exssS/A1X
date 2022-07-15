@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/css_index.css">
-	<link rel="shortcut icon" href="img_ICO/Letter_A_red_35056.ico">
-	<title>A1X</title>
+	<link rel="shortcut icon" href="img_ICO/Layer.png">
+	<title>Teams & Players - A1X</title>
 </head>
 
 <body id="dark">
@@ -15,7 +15,7 @@
 		<div class="header__logo">
 			<a href="index.html" class="header__logo--link">
 				<div class="headrer__logo-name">A1X</div>
-				<img class="img__logo" src="img/kindpng_443у454.png" alt="">
+				<img class="img__logo" src="img/kindpng_443454.png" alt="">
 			</a>
 		</div>
 
@@ -36,7 +36,9 @@
 			</ul>
 		</nav>
 		<div class="nav__search">
-			<input type="text" name="" class="header__search" id="headerSearch">
+			<input id="headerSearch" autocapitalize="none" autocomplete="off" autocorrect="off" name="search_query"
+				tabindex="0" type="text" spellcheck="false" placeholder="Search" aria-label="Search" role="combobox"
+				aria-haspopup="false" aria-autocomplete="list" dir="ltr" class="header__search" style="outline: none;">
 			<button class="header__search--icon" id="headerSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
 		</div>
 		<!--  Темная и светлая тема
@@ -46,11 +48,22 @@
 		</label> -->
 	</header>
 
-	<section class="section">
-		<div class="container">
-
+	<section class="section__clock">
+		<div class="clock__news">
+			<div class="title__news">
+				<a href="" class="link__news">
+					Teams & Players
+				</a>
+			</div>
+			<div id="timeBar">
+				<div id="hours" style="--clr:rgb(255, 255, 255)">00</div>
+				<div id="minutes" style="--clr:rgb(255, 255, 255)">00</div>
+				<div id="ampm" style="--clr: rgb(255, 255, 255)">AM</div>
+			</div>
 		</div>
 	</section>
+	<div class="container">
+	</div>
 
 </body>
 <script src="https://kit.fontawesome.com/64e3ad5f9e.js" crossorigin="anonymous"></script>
