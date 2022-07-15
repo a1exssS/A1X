@@ -836,3 +836,135 @@ document.getElementById('submit2').onclick = function () {
 		document.getElementById('p2').innerHTML = `write your numbers pls`
 	}
 }*/
+
+
+// lesson 39
+
+/*let numbers = [2, 3, 4, 5, 6, 7, 8, 9, 0, 10]
+let squares = numbers.map(squar);
+let cubes = numbers.map(cube);
+cubes.forEach(print);
+
+function squar(element) {
+	return Math.pow(element, 2)
+}
+function cube(element) {
+	return Math.pow(element, 3)
+}
+function print(element) {
+	console.log(element)
+}*/
+
+
+// lesson 40
+
+/*document.getElementById('submit').onclick = function () {
+	let number1 = document.getElementById('number1').value
+	let number2 = document.getElementById('number2').value
+	let number3 = document.getElementById('number3').value
+	let number4 = document.getElementById('number4').value
+
+	let ages = [Number(number1), Number(number2), Number(number3), Number(number4)]
+	adults = ages.filter(agess)
+	adults.forEach(print)
+
+	function agess(element) {
+		return element <= 641
+	}
+	function print(element) {
+		console.log(element)
+	}
+}*/
+
+
+// lesson 41
+
+/*document.getElementById('submit').onclick = function () {
+	let text1 = document.getElementById('text1').value;
+	let text2 = document.getElementById('text2').value;
+	let text3 = document.getElementById('text3').value;
+	let text4 = document.getElementById('text4').value;
+
+	if (text1 == "Garry's mode" && text2 == "CS:GO" && text3 == "Geometridash" && text4 == "minecraft") {
+		let text1 = 1000000000000000
+		let text2 = 1000000000000000
+		let text3 = 1000000000000000
+		let text4 = 1000000000000000
+
+		let allPrise = [text1, text2, text3, text4]
+		let total = allPrise.reduce(allPrises)
+		document.getElementById('p1').innerHTML = total
+		function allPrises(total, element) {
+			return total + element
+		}
+		document.getElementById('p1').innerHTML = `your prise is $${total}, ha ha ha it was a joke you an idiot`
+	}
+	else {
+
+		document.getElementById('p1').innerHTML = `sorry but we didn't find your tois:(`
+	}
+}*/
+
+
+// lesson 42,43
+
+/*document.getElementById('submit').onclick = function () {
+	let radio1 = document.getElementById('radio1').checked;
+	let radio2 = document.getElementById('radio2').checked;
+	let numbers = [14, 56, 36, 07, 34, 8, 23]
+	if (radio1) {
+		numbers = numbers.sort(
+			function (x, y) {
+				return x - y
+			})
+		numbers.forEach(print)
+	}
+	if (radio2) {
+		numbers = numbers.sort(function (x, y) {
+			return y - x
+		})
+		numbers.forEach(print)
+	}
+	function print(element) {
+		console.log(element)
+	}
+}*/
+
+
+// lesson 43
+
+/*let count = 0
+document.getElementById('submit1').onclick = function () {
+	count += 1
+	document.getElementById('p1').innerHTML = count
+}
+document.getElementById('submit2').onclick = function () {
+	count -= 1
+	document.getElementById('p1').innerHTML = count
+}
+document.getElementById('submit3').onclick = function () {
+	document.getElementById('p1').innerHTML = count = 0
+}*/
+
+// lesson 43,44
+
+/*let count = 0
+document.getElementById('submit1').onclick = () => {
+	count += 1
+	document.getElementById('p1').innerHTML = count
+}
+document.getElementById('submit2').onclick = () => {
+	count -= 1
+	document.getElementById('p1').innerHTML = count
+}
+document.getElementById('submit3').onclick = () => {
+	document.getElementById('p1').innerHTML = count = 0
+}*/
+
+/*document.getElementById('submit').onclick = () => {
+	let number1 = document.getElementById('number1').value
+	let number2 = document.getElementById('number2').value
+	// document.getElementById('p1').innerHTML = `your number is ${percent(number1, number2)}%`
+	// const percent = (x, y) => x / y * 100
+	// document.getElementById('p1').innerHTML = `your number is ${(number1 / number2 * 100)}%`
+}*/
