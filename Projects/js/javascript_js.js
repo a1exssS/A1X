@@ -961,6 +961,9 @@ document.getElementById('submit3').onclick = () => {
 	document.getElementById('p1').innerHTML = count = 0
 }*/
 
+
+// lesson 45
+
 /*document.getElementById('submit').onclick = () => {
 	let number1 = document.getElementById('number1').value
 	let number2 = document.getElementById('number2').value
@@ -968,3 +971,128 @@ document.getElementById('submit3').onclick = () => {
 	// const percent = (x, y) => x / y * 100
 	// document.getElementById('p1').innerHTML = `your number is ${(number1 / number2 * 100)}%`
 }*/
+
+
+// lesson 46
+
+/*document.getElementById('submit').onclick = () => {
+	let cards = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
+	shuffle(cards)
+	cards.forEach(card => document.getElementById('p1').innerHTML = card)
+	function shuffle(array) {
+		let currentIndex = array.length
+		while (currentIndex != 0) {
+			let randonIndex = Math.floor(Math.random() * array.length)
+			currentIndex -= 1
+			let temp = array[currentIndex]
+			array[currentIndex] = array[randonIndex]
+			array[randonIndex] = temp
+		}
+		return array
+	}
+}*/
+
+
+// lesson 47
+
+/*document.getElementById('submit').onclick = () => {
+	let text1 = document.getElementById('text1').value;
+	let value = 0;
+	login()
+	function login() {
+		userName()
+		userValue()
+		function userName() {
+			console.log(text1)
+		}
+		function userValue() {
+			console.log(value)
+		}
+	}
+}*/
+
+// lesson 48
+
+/*document.getElementById('showAll').onclick = () => {
+	let shop = new Map([
+		["garry's mode", 20],
+		["csgo", 2340],
+		["mine", 340],
+		["idk", 220],
+	])
+	shop.forEach((value, items) => console.log(`${items} is cost ${value}$`))
+
+	document.getElementById('submit').onclick = () => {
+		let value = document.getElementById('text1').value
+		let cart = 0
+		cart += shop.get("csgo");
+		cart += shop.set('idkkkkk', 3456)
+		cart += shop.delete('idkkkkk')
+		cart += shop.has('idk')
+		cart += shop.get(value);
+		cart += shop.size;
+		document.getElementById('p1').innerHTML = cart
+	}
+}*/
+
+/*document.getElementById('submit').onclick = () => {
+	let radio1 = document.getElementById('radio1').checked;
+	let radio2 = document.getElementById('radio2').checked;
+	const iphone1 = {
+		model: 'new',
+		age: '16',
+		id: 'idk what should I write',
+		cost: () => {
+			document.getElementById('p1').innerHTML = `your iphone is cost $297582758`
+		},
+		credit: () => {
+			document.getElementById('p1').innerHTML = `credit is cost $297582323422758`
+		}
+	}
+	const iphone2 = {
+		model: 'old',
+		age: '1623423',
+		id: 'idk what should I write',
+		cost: () => {
+			document.getElementById('p1').innerHTML = `your iphone is cost $18`
+		},
+		credit: () => {
+			document.getElementById('p1').innerHTML = `credit is cost $28`
+		}
+	}
+	if (radio1) {
+		console.log(iphone1.age)
+	}
+	else if (radio1) {
+		document.getElementById('p1').innerHTML = iphone2.iphone1
+	}
+	else {
+		document.getElementById('p1').innerHTML = `select whAT you want`
+}*/
+
+
+
+// lesson 50
+/*const iphone1 = {
+	model: 'new',
+	age: 16,
+	id: 'idk what should I write',
+	cost: function () {
+		console.log(`your ${this.model} is cost $297582758`);
+	},
+	credit: function () {
+		console.log(`${this.age} is cost $297582323422758`);
+	}
+}
+const iphone2 = {
+	model: 'old',
+	age: '1623423',
+	id: 'idk what should I write',
+	cost: function () {
+		console.log(`your ${this.model} is cost $18`);
+	},
+	credit: function () {
+		console.log(`credit is cost $28 ${this.id}`);
+	}
+}
+iphone2.cost();*/
