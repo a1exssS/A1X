@@ -1096,3 +1096,76 @@ const iphone2 = {
 	}
 }
 iphone2.cost();*/
+
+
+
+// let something = 0
+
+// console.log(something.a = 234)
+
+
+
+
+
+
+// let user = {
+// 	name: "Alex",
+// 	surName: "Volkov"
+// }
+// user.name = "a1exss"
+
+// console.log(user.name)
+// delete user.name
+// console.log([user])
+
+
+/*function XO(str) {
+	let x = str.match(/x/gi);
+	let o = str.match(/o/gi);
+	return (x && x.length) === (o && o.length);
+ }
+ */
+
+// function litres(time) {
+// 	time = Math.floor(time / 0.5)
+// 	return time;
+// }
+// console.log()
+
+
+// function strCount(str, letter) {
+
+// 	while (str.indexOf(letter) !== 0) {
+// 		return Math.floor(str.indexOf(letter))
+// 	}
+
+// 	// for (let i = 0; i <= str.indexOf(letter); ++i) {
+// 	// 	return i
+// 	// }
+// }
+// console.log(strCount('helloNigga', 'g'))
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+
+// const words = str.split(' ');
+// console.log(words[3]);
+
+// function areYouPlayingBanjo(name) {
+// 	if (name.indexOf('r') == 0 || name.indexOf('R') == 0) {
+// 		return name + ' hi'
+// 	}
+// 	else {
+// 		return name + ' hidfafgeasfaef'
+// 	}
+// }
+// console.log(areYouPlayingBanjo('eon'))
+
+/*let i = 7;
+let a = 1000
+do {
+	a = a - i
+	console.log(a)
+} while (a > -1)*/
+
+
+
